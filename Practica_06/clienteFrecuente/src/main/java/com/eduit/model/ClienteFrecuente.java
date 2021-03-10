@@ -5,27 +5,15 @@
  */
 package com.eduit.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
 /**
  *
  * @author Reisel
  */
-@Entity
-@Table(name="ClientesFrecuentes")
 public class ClienteFrecuente {
     
-    @Id
-    @Column(name="idCliente")
     public String idCliente;
-    @Column(name="nombre")
     public String nombre;
-    @Column(name="apellido")
     public String apellido;
-    @Column(name="tipoDescuento")
     public Integer tipoDescuento;
 
     public ClienteFrecuente() {
